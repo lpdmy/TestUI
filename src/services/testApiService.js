@@ -1,6 +1,6 @@
 export const getEnvironmentConfig = async () => {
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/test-config`);
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/ConfigTest/show2`);
     if (!response.ok) {
       throw new Error('Lỗi khi lấy dữ liệu cấu hình');
     }

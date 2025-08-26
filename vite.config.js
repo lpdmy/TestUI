@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   // Tải tất cả các biến môi trường từ file .env
   // eslint-disable-next-line no-undef
-  const env = loadEnv(mode, process.cwd(), '');
+  // const env = loadEnv(mode, process.cwd(), '');
 
   return {
     plugins: [

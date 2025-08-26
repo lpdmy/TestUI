@@ -10,15 +10,15 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react()
     ],
-    server: {
-      proxy: {
-        '/api': {
-          // Sử dụng đối tượng `env` để truy cập biến môi trường đã tải
-          target: env.VITE_API_URL,
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, ''),
-        },
-      },
-    },
+    // server: {
+    //   proxy: {
+    //     '/api': {
+    //       // Sử dụng đối tượng `env` để truy cập biến môi trường đã tải
+    //       target: env.VITE_API_URL,
+    //       changeOrigin: true,
+    //       rewrite: (path) => path.replace(/^\/api/, ''),
+    //     },
+    //   },
+    // },
   };
 });
